@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  user se value le ke table print  -->
+    <h1 style="width: 250px; margin: auto">hm hai Don</h1>
+    <form onsubmit="event.preventDefault(); ;">
+        <input type="text" id="numInput" style="width: 250px; margin: auto" placeholder="Enter a number"
+            oninput="table()" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <div style="width: 250px; margin: auto" id="tablee"></div>
+
+    <script>
+        const num = document.getElementById("numInput");
+        const tables = document.getElementById("tablee");
+
+        function table() {
+            const a = parseInt(num.value);
+            // if (isNaN(a)) {
+            //     tables.innerHTML = "Please enter a valid number!";
+            //     return;
+            // }
+
+            let tableeHTML = "";
+
+            for (let i = 1; i <= 10; i++) {
+                tableeHTML += `${a} X ${i} = ${a * i} <br>`;
+            }
+
+            tables.innerHTML = tableeHTML;
+        }
+    </script>
+</body>
+
+</html>
