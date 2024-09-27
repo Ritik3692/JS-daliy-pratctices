@@ -26,12 +26,17 @@
 
         function table() {
             const a = parseInt(num.value);
-           
+            if (isNaN(a)) {
+                tables.innerHTML = "Please enter a valid number!";
+                return;
+            }
+
             let tableeHTML = "";
 
             for (let i = 1; i <= 10; i++) {
                 tableeHTML += `${a} X ${i} = ${a * i} <br>`;
             }
+
             tables.innerHTML = tableeHTML;
         }
     </script>
