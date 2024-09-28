@@ -30,9 +30,13 @@ let tar=22
 let re = [];
 arr.forEach((ele,index) => {
     
+
+    
     if(ele === tar){
         re.push(index);
     }
     
+
+
 });
 console.log(re)
