@@ -3,9 +3,7 @@ function sum(a, b, c, d) {
     k = a + b + c + d;
     return k;
 }
-
 //  1 to user gavi number tak ka addition
-
 function addNum(n) {
 
     let sum = 0;
