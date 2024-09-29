@@ -1,11 +1,8 @@
 // how to print a function
 function printfsamethik() {
-
     console.log("tumk ko kya pata h");
-
 }
 printfsamethik();
-
 
 // how to use function to print table  2 To 13
 
