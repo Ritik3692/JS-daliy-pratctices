@@ -6,6 +6,7 @@ printfsamethik();
 
 // how to use function to print table  2 To 13
 
+
 function TablesAll() {
     console.log("2 ka table ");
     console.log("***********************");
